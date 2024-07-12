@@ -1,8 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/popup-menu-card.dart';
 
 void main(){
-  runApp(const MyApp());
+  runApp(MyApp());
 }
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -11,17 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.indigo,
-          title: Text("Hamza Ali",style: TextStyle(
-            color: Colors.white
-          ),),
-        ),
-        body: Container(
-          child: Text("practice"),
-        )
-      ),
+      home: Popup_menuCard(),
     );
   }
 }
