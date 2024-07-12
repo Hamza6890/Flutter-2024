@@ -1,6 +1,9 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'appbar.dart';
+import 'bottom_navigationBar.dart';
+
 class Popup_menuCard extends StatefulWidget {
   const Popup_menuCard({super.key});
 
@@ -57,9 +60,10 @@ class _Popup_menuCardState extends State<Popup_menuCard> {
   }
   Widget build(BuildContext context) {
     return MaterialApp(
-
+      debugShowCheckedModeBanner: false,
        home: Scaffold(
-
+         //bottomNavigationBar: bottomBar(),
+         body: appBar_section(),
        ),
     );
   }
