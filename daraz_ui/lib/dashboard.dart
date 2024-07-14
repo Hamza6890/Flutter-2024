@@ -9,7 +9,7 @@ class Dashboard_ui extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.indigo,
+          backgroundColor: Colors.white,
           title: Row(
             children: [
               Column(
@@ -35,6 +35,37 @@ class Dashboard_ui extends StatelessWidget {
                     border: OutlineInputBorder(borderRadius: BorderRadius.circular(10)),
                     contentPadding: EdgeInsets.all(10),
                   ),
+                ),
+              ),
+              SizedBox(width: 20,),
+              Column(
+                children: [
+                  Icon(Icons.currency_bitcoin,color: Colors.black,),
+                  Text("Coin",style: TextStyle(
+                      fontSize: 10
+                  ),)
+                ],
+              ),
+              SizedBox(width: 20,),
+              Column(
+                children: [
+                  Icon(Icons.account_balance_wallet_outlined,color: Colors.black,),
+                  Text("Wallet",style: TextStyle(
+                      fontSize: 10
+                  ),)
+                ],
+              ),
+            ],
+          ),
+        ),
+        body: SingleChildScrollView(
+          child: Column(
+            children: [
+              Container(
+                height: 200,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                  color: Colors.amberAccent
                 ),
               )
             ],
