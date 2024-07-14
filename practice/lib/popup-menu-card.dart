@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:practice/slider.dart';
 
 import 'appbar.dart';
 import 'bottom_navigationBar.dart';
@@ -66,7 +67,12 @@ class _Popup_menuCardState extends State<Popup_menuCard> {
       debugShowCheckedModeBanner: false,
        home: Scaffold(
          //bottomNavigationBar: bottomBar(),
-         body: appBar_section(),
+         body: Column(
+             children: [
+               appBar_section(),
+              // ImageSlider(),
+             ],
+         ),
        ),
     );
   }
