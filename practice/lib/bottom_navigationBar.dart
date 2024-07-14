@@ -34,6 +34,7 @@ class _bottomBarState extends State<bottomBar> {
             BottomNavigationBarItem(
               icon: Icon(Icons.home,color: Colors.deepOrange,),
               label: 'Home',
+
             ),
             BottomNavigationBarItem(
               icon: Icon(Icons.search,color: Colors.deepOrange),
