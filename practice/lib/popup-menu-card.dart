@@ -22,14 +22,16 @@ class _Popup_menuCardState extends State<Popup_menuCard> {
       context: context,
       builder: (BuildContext context) {
         return Dialog(
+          backgroundColor: Colors.deepOrange,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
           ),
           child: Container(
-            margin: EdgeInsets.only(bottom: 10,left: 10,right: 10),
-            width: MediaQuery.of(context).size.width * 0.6,  // 80% of screen width
-            height: MediaQuery.of(context).size.height * 0.6, // 50% of screen height
-            padding: EdgeInsets.all(20.0), // Adjust padding as needed
+            color: Colors.deepOrange,
+            margin: EdgeInsets.only(left: 10,right: 10),
+            width: MediaQuery.of(context).size.width * 0.6,
+            height: MediaQuery.of(context).size.height * 0.6,
+            padding: EdgeInsets.all(20.0),
             child: Column(
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,6 +46,7 @@ class _Popup_menuCardState extends State<Popup_menuCard> {
                   ),
                   textAlign: TextAlign.center,
                 ),
+
                 SizedBox(height: 20.0),
                 ElevatedButton(
                   onPressed: () {
