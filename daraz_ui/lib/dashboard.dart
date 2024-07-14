@@ -1,6 +1,8 @@
 import 'package:daraz_ui/slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'any_3/3_items.dart';
+import 'any_3/items_Container.dart';
 import 'flash_sale/flash_sale.dart';
 import 'flash_sale/item_container.dart';
 import 'location.dart';
@@ -165,7 +167,7 @@ class Dashboard_ui extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   children: [
-                    flash_sale_container(),
+                    Three_items_container(),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Padding(
@@ -174,36 +176,36 @@ class Dashboard_ui extends StatelessWidget {
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [
                             SizedBox(width: 10,),
-                            item_container(text: '2,678',
-                              first_price: '3,000',
+                            items3_container(text: '2,678',
+                              first_price: 'Rs 3,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '3,678',
-                              first_price: '4,000',
+                            items3_container(text: '3,678',
+                              first_price: 'Rs 4,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '2,678',
-                              first_price: '3,000',
+                            items3_container(text: '2,678',
+                              first_price: 'Rs 3,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '3,678',
-                              first_price: '4,000',
+                            items3_container(text: '3,678',
+                              first_price: 'Rs 4,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '2,678',
-                              first_price: '3,000',
+                            items3_container(text: '2,678',
+                              first_price: 'Rs 3,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '3,678',
-                              first_price: '4,000',
+                            items3_container(text: '3,678',
+                              first_price: 'Rs 4,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '2,678',
-                              first_price: '3,000',
+                            items3_container(text: '2,678',
+                              first_price: 'Rs 3,000',
                             ),
                             SizedBox(width: 10,),
-                            item_container(text: '3,678',
-                              first_price: '4,000',
+                            items3_container(text: '3,678',
+                              first_price: 'Rs 4,000',
                             ),
                             SizedBox(width: 10,),
                           ],
