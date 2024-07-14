@@ -1,3 +1,4 @@
+import 'package:daraz_ui/slider.dart';
 import 'package:flutter/material.dart';
 
 class Dashboard_ui extends StatelessWidget {
@@ -61,13 +62,28 @@ class Dashboard_ui extends StatelessWidget {
         body: SingleChildScrollView(
           child: Column(
             children: [
-              Container(
-                height: 200,
-                width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(
-                  color: Colors.amberAccent
-                ),
-              )
+              Stack(
+                children: [
+                  Container(
+                      height: 200,
+                      width: MediaQuery.of(context).size.width,
+                      decoration: BoxDecoration(
+                          color: Colors.amberAccent
+                      ),
+                      child: ImageSlider()
+                  ), //Slider Container
+                  Container(
+                    height: 50,
+                    width: MediaQuery.of(context).size.width,
+                    margin: EdgeInsets.only(left: 20,right: 20,top: 190),
+                    decoration: BoxDecoration(
+                        color: Colors.white,
+                        boxShadow: ,
+                        borderRadius: BorderRadius.circular(20)
+                    ),
+                  )
+                ],
+              ),
             ],
           ),
         ),
