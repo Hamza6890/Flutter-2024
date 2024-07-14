@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:percent_indicator/linear_percent_indicator.dart';
 
 class items3_container extends StatelessWidget {
   final String text;
   final String first_price;
+  final String imgPath;
 
   const items3_container({super.key,
     required this.text,
     required this.first_price,
+    required this.imgPath,
   });
 
   @override
@@ -27,7 +28,7 @@ class items3_container extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.grey,
             ),
-            child: Image.asset("assets/s1.jfif"),
+            child: Image.asset(imgPath),
           ),
           Row(
             children: [

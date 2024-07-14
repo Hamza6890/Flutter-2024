@@ -5,10 +5,12 @@ import 'package:percent_indicator/linear_percent_indicator.dart';
 class item_container extends StatelessWidget {
   final String text;
   final String first_price;
+  final String img_path;
 
   const item_container({super.key,
     required this.text,
     required this.first_price,
+    required this.img_path,
     });
 
   @override
@@ -27,7 +29,7 @@ class item_container extends StatelessWidget {
             decoration: BoxDecoration(
               color: Colors.grey,
             ),
-            child: Image.asset("assets/s1.jfif"),
+            child: Image.asset(img_path),
           ),
           Row(
             children: [
@@ -51,6 +53,7 @@ class item_container extends StatelessWidget {
           SizedBox(height: 10,),
           LinearPercentIndicator(
             width: 120,
+
             barRadius: Radius.circular(30),
             lineHeight: 14,
             percent: 0.7,
