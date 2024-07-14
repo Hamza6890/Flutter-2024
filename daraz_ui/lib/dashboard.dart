@@ -1,8 +1,8 @@
 import 'package:daraz_ui/slider.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
-import 'flash_sale.dart';
+import 'flash_sale/flash_sale.dart';
+import 'flash_sale/item_container.dart';
 import 'location.dart';
 
 class Dashboard_ui extends StatelessWidget {
@@ -99,54 +99,116 @@ class Dashboard_ui extends StatelessWidget {
                   Location_Container(),
                 ],
               ),
+              SizedBox(height: 2,),
               Container(
                 height: 250,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(
-                    color: Colors.blueAccent,
+                    color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
                 child: Column(
                   children: [
                     flash_sale_container(),
-                    Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-                            color: Colors.red
-                          ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                              ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                          ],
                         ),
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-                              color: Colors.amber
-                          ),
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              SizedBox(height: 10,),//Flash Sale Container
+              Container(
+                height: 250,
+                width: MediaQuery.of(context).size.width,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(10)),
+                child: Column(
+                  children: [
+                    flash_sale_container(),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 5),
+                        child: Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          children: [
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '2,678',
+                              first_price: '3,000',
+                            ),
+                            SizedBox(width: 10,),
+                            item_container(text: '3,678',
+                              first_price: '4,000',
+                            ),
+                            SizedBox(width: 10,),
+                          ],
                         ),
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-                              color: Colors.red
-                          ),
-                        ),
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-                              color: Colors.amber
-                          ),
-                        ),
-                        Container(
-                          height: 180,
-                          width: 120,
-                          decoration: BoxDecoration(
-                              color: Colors.red
-                          ),
-                        ),
-                      ],
+                      ),
                     )
                   ],
                 ),

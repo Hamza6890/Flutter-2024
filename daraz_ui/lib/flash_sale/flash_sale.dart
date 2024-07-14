@@ -9,7 +9,7 @@ class flash_sale_container extends StatelessWidget {
       height: 50,
       width: MediaQuery.of(context).size.width,
       decoration: BoxDecoration(
-          color: Colors.indigo,
+          color: Colors.transparent,
           borderRadius: BorderRadius.circular(10)
       ),
       child: Padding(
@@ -24,7 +24,7 @@ class flash_sale_container extends StatelessWidget {
                 children: [
                   Text("Flash Sale",
                     style: TextStyle(
-                        fontSize: 19,
+                        fontSize: 20,
                         fontWeight: FontWeight.bold
                     ),
                   ),
