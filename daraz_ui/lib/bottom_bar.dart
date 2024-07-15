@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
         onTap: onTabTapped,
         currentIndex: currentIndex,
         selectedLabelStyle: TextStyle(color: Colors.black),
-        items: [
+        items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home,color: Colors.black,),
             label: 'Home',backgroundColor: Colors.deepOrange,
@@ -41,8 +41,8 @@ class _HomeScreenState extends State<HomeScreen> {
             label: 'Search',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.notifications,color: Colors.black,),
-            label: 'Notifications',
+            icon: Icon(Icons.shopping_cart_sharp,color: Colors.black,),
+            label: 'Cart',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.person,color: Colors.black,),
