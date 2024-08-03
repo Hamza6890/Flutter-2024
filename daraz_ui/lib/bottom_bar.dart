@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'dailog_popup.dart';
 import 'dashboard.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -21,6 +22,19 @@ class _HomeScreenState extends State<HomeScreen> {
     setState(() {
       currentIndex = index;
     });
+  }
+
+  void initState(){
+    super.initState();
+    WidgetsBinding.instance.addPostFrameCallback((_) => showPopupMenu());
+  }
+  void showPopupMenu() {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return popup_dailog();
+      },
+    );
   }
 
   @override

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class Category_container extends StatelessWidget {
-  const Category_container({super.key});
+class CategoryContainer extends StatelessWidget {
+  const CategoryContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,7 @@ class Category_container extends StatelessWidget {
                       borderRadius: BorderRadius.circular(5),
                       border: Border.all(color: Colors.red)
                   ),
-                  child: Center(
+                  child: const Center(
                     child: Text("See More >",style: TextStyle(
                         fontSize: 14,
                         color: Colors.red

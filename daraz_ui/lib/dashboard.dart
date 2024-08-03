@@ -307,7 +307,7 @@ class Dashboard_ui extends StatelessWidget {
                 decoration: BoxDecoration(color: Colors.white),
                 child: const Column(
                   children: [
-                    Category_container(),
+                    CategoryContainer(),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Padding(
