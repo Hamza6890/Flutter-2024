@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "873426906741",
+    "project_id": "chatapp-fire-59088",
+    "storage_bucket": "chatapp-fire-59088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:873426906741:android:9f38bd15c8210c0e5ad23c",
+        "android_client_info": {
+          "package_name": "com.chatapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNF2EBq-0OBuQ4GZ4qS1iUrCqi_1RJfsA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

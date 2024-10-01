@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "259294538826",
+    "project_id": "chatappfirebase-e6c68",
+    "storage_bucket": "chatappfirebase-e6c68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:259294538826:android:b9468ca605b156b6e9cab3",
+        "android_client_info": {
+          "package_name": "com.ChatApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRqCFgTLdjHeyfB1tiHQt9cR4dDSZ7vr0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
