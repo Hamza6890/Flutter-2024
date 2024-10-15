@@ -44,12 +44,12 @@ class Dashboard_ui extends StatelessWidget {
                     borderRadius: BorderRadius.circular(10)),
                 child: TextFormField(
                   decoration: InputDecoration(
-                    labelStyle: TextStyle(
+                    labelStyle: const TextStyle(
                       color: Colors.black,
                       fontSize: 12
                     ),
                     hintText: "search....",
-                    suffixIcon: Icon(
+                    suffixIcon: const Icon(
                       Icons.search,
                       color: Colors.black,
                     ),
@@ -59,10 +59,10 @@ class Dashboard_ui extends StatelessWidget {
                   ),
                 ),
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Column(
+              const Column(
                 children: [
                   Icon(
                     Icons.currency_bitcoin,
@@ -74,10 +74,10 @@ class Dashboard_ui extends StatelessWidget {
                   )
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
-              Column(
+              const Column(
                 children: [
                   Icon(
                     Icons.account_balance_wallet_outlined,
@@ -100,18 +100,18 @@ class Dashboard_ui extends StatelessWidget {
                   Container(
                       height: 200,
                       width: MediaQuery.of(context).size.width,
-                      decoration: BoxDecoration(color: Colors.amberAccent),
+                      decoration: const BoxDecoration(color: Colors.amberAccent),
                       child: ImageSlider()), //Slider Container
-                  Location_Container(),
+                  const Location_Container(),
                 ],
               ),
-              SizedBox(
+              const SizedBox(
                 height: 2,
               ),
               Container(
                 height: 200,
                 width: MediaQuery.of(context).size.width,
-                decoration: BoxDecoration(color: Colors.transparent),
+                decoration: const BoxDecoration(color: Colors.transparent),
                 child: Image.asset("assets/banner.jpeg"),
               ),
               SizedBox(height: 5,),
@@ -121,13 +121,13 @@ class Dashboard_ui extends StatelessWidget {
                 decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10)),
-                child: Column(
+                child: const Column(
                   children: [
                     flash_sale_container(),
                     SingleChildScrollView(
                       scrollDirection: Axis.horizontal,
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 5),
+                        padding: EdgeInsets.only(top: 5),
                         child: Row(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: [

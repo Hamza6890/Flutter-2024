@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
 import 'bottom_bar.dart';
-import 'dashboard.dart';
 
 void main() {
   runApp(const MyApp());
