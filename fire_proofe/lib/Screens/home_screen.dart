@@ -36,6 +36,7 @@ class HomeScreen extends StatelessWidget {
               decoration: BoxDecoration(
                   color: BBcolor,
                   borderRadius: BorderRadius.only(
+
                       topRight: Radius.circular(30),
                       topLeft: Radius.circular(30))),
               child: Column(

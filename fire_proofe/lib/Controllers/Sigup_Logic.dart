@@ -6,7 +6,7 @@ import 'package:get/get.dart';
 
 import '../models/person.dart';
 
-class SigupController  extends GetxController{
+class SigupController {
 
   TextEditingController nameController = TextEditingController() ;
   TextEditingController emailController = TextEditingController() ;

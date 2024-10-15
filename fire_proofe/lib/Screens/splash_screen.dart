@@ -10,13 +10,18 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashScreenState extends State<SplashScreen> {
-
   @override
   void initState() {
     super.initState();
     // Start a timer of 3 seconds and navigate to HomeScreen
-    Timer(const Duration(seconds: 3), () {
-      Get.toNamed("/home");
+    Timer(const Duration(seconds: 3), _navigateToHome);
+  }
+
+  void _navigateToHome() {
+    // Use WidgetsBinding to ensure navigation happens after the build phase
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+       Get.offNamed("/home");
+
 
     });
   }
@@ -35,16 +40,6 @@ class SplashScreenState extends State<SplashScreen> {
               width: 170,
               height: 170,
             ),
-            const SizedBox(height: 20),
-            // Text widget under the logo
-            // Text(
-            //   'Welcome to MyApp',
-            //   style: TextStyle(
-            //     fontSize: 24,
-            //     fontWeight: FontWeight.bold,
-            //     color: Colors.blue,
-            //   ),
-            // ),
             const SizedBox(height: 20),
             // Optional: Add a loading indicator
             const CircularProgressIndicator(
